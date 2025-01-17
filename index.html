@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Social Media Icons</title>
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black; /* Black background */
+      color: white; /* White text */
+    }
+    .header {
+      font-size: 36px; /* Title font size */
+      font-weight: 600; /* Bold title */
+      margin-top: 40px; /* Space from the top of the page */
+      margin-bottom: 150px; /* Space between the title and icons */
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* Wrap icons for smaller screens */
+      gap: 20px;
+      transition: all 0.5s ease; /* Smooth animation for layout changes */
+    }
+    .social-icons .icon-wrapper {
+      display: flex;
+      flex-direction: column; /* Stack icon and name by default */
+      align-items: center;
+      gap: 15px; /* Increased space between icon and name */
+      text-align: center;
+      transition: flex-direction 0.5s ease; /* Smooth transition for layout change */
+    }
+    .social-icons a {
+      text-decoration: none;
+      color: black; /* Icon color */
+      width: 50px;
+      height: 50px; /* Icon size */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid white; /* White border */
+      background-color: white; /* White background */
+      border-radius: 50%;
+      font-size: 20px; /* Icon size */
+      transition: all 0.3s ease; /* Smooth hover effect */
+    }
+    .social-icons a:hover {
+      background-color: black; /* Change to black on hover */
+      color: white; /* Icon color becomes white */
+    }
+    .social-icons span {
+      font-size: 14px; /* Social media name size */
+      font-weight: 400; /* Regular weight */
+    }
+    @media (max-width: 600px) {
+      .social-icons .icon-wrapper {
+        flex-direction: row; /* Icon and name side by side on small screens */
+        gap: 20px; /* Space between icon and name */
+      }
+      .social-icons span {
+        font-size: 12px; /* Smaller text size for small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Nee_Oo_Chan</div>
+  <div class="social-icons">
+    <div class="icon-wrapper">
+      <a href="https://www.facebook.com/neeoochan" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <span>Facebook</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://www.instagram.com/nee_oo_chan/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <span>Instagram</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://web.viber.com" target="_blank"><i class="fab fa-viber"></i></a>
+      <span>Viber</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://wa.me/9861609369" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <span>WhatsApp</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://x.com/nee_oo_chan" target="_blank"><i class="fab fa-x"></i></a>
+      <span>X</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://www.threads.net/@nee_oo_chan" target="_blank"><i class="fab fa-instagram"></i></a>
+      <span>Threads</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="mailto:neeoochan@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <span>Email</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://github.com/ji-neeoochan" target="_blank"><i class="fab fa-github"></i></a>
+      <span>GitHub</span>
+    </div>
+    <div class="icon-wrapper">
+      <a href="https://nhyoochan.name.np" target="_blank"><i class="fas fa-globe"></i></a>
+      <span>Website</span>
+    </div>
+  </div>
+</body>
+</html>
