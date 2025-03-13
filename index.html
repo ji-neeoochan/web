@@ -7,94 +7,136 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      font-family: 'Pixelify Sans', sans-serif;
       margin: 0;
       padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      -ms-overflow-style: none;
+      overflow-y: scroll;
+    }
+
+    .header {
+      background-color: #181717;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    .aboutMe {
+      background-color: #7c6f6f;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-weight: bolder;
+      height: 50px;
+    }
+
+    .wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      color: black;
-      background-image: url('image1.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      height: 100vh; /* Ensure the body takes up full viewport height */
+      min-height: 100vh;
     }
-    .header {
-      font-size: 36px; 
-      font-weight: 600;
-      margin-top: 40px; 
-      margin-bottom: 35px;
+
+    .content {
+      flex: 1;
     }
-    .social-list {
-      list-style: none;
-      padding: 0;
-      width: 100%;
-      max-width: 500px;
-    }
-    .social-list li {
-      display: flex;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.8); /* Transparent white background */
-      color: black;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 5px;
-      transition: all 0.3s ease;
-    }
-    .social-list li:hover {
-      background: gray;
+
+    footer {
+      background-color: #181717;
       color: white;
-    }
-    .social-list a {
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-    }
-    .social-list i {
-      font-size: 20px;
-      width: 30px;
       text-align: center;
+      padding: 1.5em 0;
+      font-size: 14px;
+      margin-top: auto;
     }
 
-    /* Desktop/Laptop: Align icons to the left with 10px space */
-    @media (min-width: 601px) {
-      .social-list li {
-        justify-content: flex-start; /* Align to the left */
-        padding-left: 10px; /* Extra space */
-      }
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
     }
 
-    /* Mobile: Center icons */
-    @media (max-width: 600px) {
-      .social-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .social-list li {
-        justify-content: center; /* Center on mobile */
-        text-align: center;
-      }
+    footer a {
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+      color: #1e7681;
+    }
+
+    #table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 2px solid black;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    html {
+      scrollbar-width: none;
+    }
+
+    .self-reflection {
+      border: 2px solid black;
+      font-size: 15px;
+      margin: 50px;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="header">𑐣𑑂𑐴𑑂𑐫𑐹𑐔𑐣 𑐬𑐖𑑂𑐎𑐬𑑂𑐣𑐶𑐎𑐬</div>
-  <ul class="social-list">
-    <li><a href="https://www.facebook.com/neeoochan" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-    <li><a href="https://www.instagram.com/nee_oo_chan/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-    <li><a href="https://x.com/nee_oo_chan" target="_blank"><i class="fab fa-x"></i> X</a></li>
-    <li><a href="https://www.threads.net/@nee_oo_chan" target="_blank"><i class="fab fa-threads"></i> Threads</a></li>
-    <li><a href="mailto:neeoochan@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a></li>
-    <li><a href="https://github.com/ji-neeoochan" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-    <li><a href="https://nhyoochan.name.np" target="_blank"><i class="fas fa-globe"></i> Website</a></li>
-    <li><a href="https://photo.nhyoochan.name.np" target="_blank"><i class="fas fa-camera"></i> MY PHOTOGRAPHY</a></li>
-  </ul>
+  <div class="wrapper"></div>
+    <div class="content"></div>
+      <div class="header">nee_oo_chan</div>
+      <div class="aboutMe"><b>ABOUT ME</b></div>
+      <div class="self-reflection"></div>
+        <h2>Independence and Boundaries</h2>
+        <p>You value your freedom and don’t like being told what to do directly. You prefer to help out on your own terms, without feeling pressured or controlled.</p>
+        
+        <h2>Pride in Personal Strengths</h2>
+        <p>You believe in owning your strengths and not letting others diminish them. You want to be authentic and true to yourself, even when others might try to influence you.</p>
+        
+        <h2>Desire for Balance</h2>
+        <p>You aim to stay neutral or on good terms with others, which shows that you value peace and harmony, but without compromising your own identity.</p>
+        
+        <h2>Self-Discovery and Solitude</h2>
+        <p>You’re in a stage of self-reflection, figuring out what makes you happy and content. You don’t feel the need for others to comfort or define your happiness. You're content with your own company for now.</p>
+        
+        <h2>Low Expectations and Finding Joy</h2>
+        <p>You keep your expectations low, possibly to avoid disappointment, and you find happiness in the little things, which shows you focus on being present in the moment rather than chasing big goals or achievements.</p>
+        
+        <h2>Hard to Read and Complex</h2>
+        <p>It’s clear that you’re not easy to read, and you have a complex personality that doesn’t fit neatly into one category. You're still figuring out who you are in this constantly changing world.</p>
+        
+        <h2>Seeking Connection to Nature</h2>
+        <p>It seems like you're aware of the disconnect from nature and that something feels different lately, almost like a reminder that you need to reconnect with yourself and your surroundings.</p>
+        
+        <h3>Conclusion</h3>
+        <p>From everything you've shared, you seem to be someone who values independence, self-reflection, and finding happiness in small moments. You're still figuring things out, but you're comfortable being alone for now, and you're focused on maintaining peace in your life without letting others dictate your path. You're also aware of the need to reconnect with nature, possibly as part of a deeper journey to rediscover yourself.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container"></div>
+        <a href="https://www.facebook.com/neeoochan" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/nee_oo_chan/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/nee_oo_chan" target="_blank"><i class="fab fa-x"></i></a>
+        <a href="https://www.threads.net/@nee_oo_chan" target="_blank"><i class="fab fa-threads"></i></a>
+        <a href="/cdn-cgi/l/email-protection#2a444f4f454549424b446a4d474b434604494547" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/ji-neeoochan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://nhyoochan.name.np" target="_blank"><i class="fas fa-globe"></i></a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
